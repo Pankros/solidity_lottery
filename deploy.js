@@ -34,6 +34,8 @@ const deploy = async () => {
     const end = new Date();
     //console.log(result);
     //console.log('Contract deployed to', result.options.address)
+    log('Contract abi');
+    log(JSON.stringify(abi));
     log('Contract deployed to', result.options.address);
     log('Contract deployed in', diffInMillis(start, end), 'ms');
     provider.engine.stop();
